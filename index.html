@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Yeska Tours | Agencia de viajes en Progreso, Hidalgo</title>
+  <meta name="description" content="Viajes nacionales e internacionales y renta de autobuses, minibuses y sprinters en Progreso, Hidalgo. Huasteca, Caribe, Colombia y más. Cotiza por WhatsApp.">
+  <meta name="theme-color" content="#FBFAF6">
+  <meta name="color-scheme" content="light">
+  <meta name="author" content="Yeska Tours">
+
+  <!-- Open Graph / redes -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Yeska Tours">
+  <meta property="og:title" content="Yeska Tours | Viaja y transforma un sueño en realidad">
+  <meta property="og:description" content="Agencia de viajes en Progreso, Hidalgo: viajes nacionales e internacionales y renta de autobuses, minibuses y sprinters.">
+  <meta property="og:image" content="assets/img/tamul-letrero.jpg">
+  <meta property="og:image:alt" content="Letrero de Cascada Tamul, Río Tampaón, San Luis Potosí">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/logo-yeska-tours.jpeg">
+
+  <!-- Tipografía: carga sin bloquear el render; si falla se usa la fuente del sistema -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"></noscript>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Datos estructurados: solo datos reales entregados por el negocio -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["TravelAgency", "LocalBusiness"],
+    "name": "Yeska Tours",
+    "description": "Agencia de viajes en Progreso, Hidalgo: viajes nacionales e internacionales y renta de autobuses, minibuses y sprinters.",
+    "slogan": "Viajar... Transformar un sueño en realidad",
+    "telephone": "+527721336096",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Progreso",
+      "addressRegion": "Hidalgo",
+      "addressCountry": "MX"
+    },
+    "areaServed": { "@type": "Country", "name": "México" },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      }
+    ],
+    "contactPoint": [
+      { "@type": "ContactPoint", "telephone": "+527721336096", "contactType": "reservas", "availableLanguage": "es" },
+      { "@type": "ContactPoint", "telephone": "+527714359019", "contactType": "reservas", "availableLanguage": "es" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios de Yeska Tours",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Viajes nacionales" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Viajes internacionales" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renta de autobuses" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renta de minibuses" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renta de sprinters" } }
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+<!-- ============ Íconos (sprite SVG reutilizable) ============ -->
+<svg class="sprite" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <linearGradient id="gStar" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E5252A"/>
+      <stop offset=".36" stop-color="#F7C600"/>
+      <stop offset=".68" stop-color="#4BB543"/>
+      <stop offset="1" stop-color="#1D6FD8"/>
+    </linearGradient>
+  </defs>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 0 1 0 16.2 8 8 0 0 1-4.1-1.13l-.3-.17-3.1.82.83-3.02-.2-.31A8.1 8.1 0 0 1 12.04 3.8Zm-3.3 3.9c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.1 4.5 2.5 1.05 3 .85 3.55.8.55-.05 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.43-.07-.12-.27-.2-.57-.35-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.77-1.67-2.07-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.2-.24-.58-.49-.5-.67-.5h-.57Z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-plane" viewBox="0 0 24 24"><path d="M2.5 12.5 21 4l-4.5 16-5-6.5-8-1Z"/><path d="m11.5 13.5 4-4"/></symbol>
+  <symbol id="i-bus" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M8 21v-3M16 21v-3"/><circle cx="8" cy="14.5" r=".8"/><circle cx="16" cy="14.5" r=".8"/></symbol>
+  <symbol id="i-hotel" viewBox="0 0 24 24"><path d="M3 20V8l9-5 9 5v12M3 20h18"/><path d="M9 20v-6h6v6M8 10h2M14 10h2"/></symbol>
+  <symbol id="i-food" viewBox="0 0 24 24"><path d="M6 3v7a2 2 0 0 0 2 2v9M10 3v7M8 3v7"/><path d="M16 21V3c-2 1-3 4-3 8h3"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.8 6.3.7-4.7 4.3 1.3 6.2L12 17l-5.6 3 1.3-6.2L3 9.5l6.3-.7L12 3Z"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h6a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h6"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0M16 5a3 3 0 0 1 0 6M18 14a6 6 0 0 1 3 6"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+  <symbol id="i-thumb" viewBox="0 0 24 24"><path d="M7 11v9H4v-9h3Zm0 0 4-7c1.5 0 2.5 1 2.2 2.6L12.8 10H19a2 2 0 0 1 2 2.3l-1 6A2 2 0 0 1 18 20H7"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.500 7-10V6l-7-3Z"/><path d="m9 12 2.200 2.200L15 10"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M13.500 21v-7.500H16l.5-3h-3V8.600c0-.9.3-1.500 1.600-1.500H16.700V4.400c-.3 0-1.300-.1-2.400-.1-2.400 0-4 1.400-4 4.100v2.100H7.800v3h2.500V21h3.200Z"/></symbol>
+</svg>
+
+<!-- ============ Cargador (spinner) ============ -->
+<div class="loader" id="loader" role="status" aria-live="polite" aria-label="Cargando Yeska Tours">
+  <div class="loader__glow" aria-hidden="true"></div>
+  <div class="loader__box">
+    <div class="loader__orbit" aria-hidden="true">
+      <svg viewBox="0 0 120 120">
+        <circle class="orb orb--1" cx="60" cy="60" r="55"/>
+        <circle class="orb orb--2" cx="60" cy="60" r="45"/>
+        <circle class="orb orb--3" cx="60" cy="60" r="35"/>
+      </svg>
+      <svg class="loader__star" viewBox="0 0 100 100"><path d="M50 8 60.600 37.400 91.800 38.400 67.100 57.600 75.900 87.600 50 70 24.100 87.600 32.900 57.600 8.200 38.400 39.400 37.400Z"/></svg>
+    </div>
+    <img class="loader__logo" src="assets/logo-yeska-tours.jpeg" alt="Yeska Tours" width="539" height="254">
+    <p class="loader__msg">Preparando tu próximo viaje</p>
+    <div class="loader__bar" aria-hidden="true"><i id="loaderBar"></i></div>
+    <p class="loader__pct" aria-hidden="true"><span id="loaderPct">0</span>%</p>
+  </div>
+</div>
+
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<!-- ============ Encabezado ============ -->
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="#inicio" aria-label="Yeska Tours, ir al inicio">
+      <img src="assets/logo-yeska-tours.jpeg" alt="Yeska Tours: viajar, transformar un sueño en realidad" width="539" height="254">
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#destinos">Destinos</a>
+      <a href="#transporte">Transporte</a>
+      <a href="#experiencias">Experiencias</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn btn--primary nav__cta" data-wa data-wa-msg="Hola Yeska Tours 👋 Quiero planear mi próximo viaje." href="#contacto">
+        <svg class="ico ico--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg> Hablemos de tu viaje
+      </a>
+    </nav>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+</header>
+
+<main id="contenido">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+    <canvas class="hero__fx" id="heroFx" aria-hidden="true"></canvas>
+    <div class="hero__blobs" aria-hidden="true"><i></i><i></i><i></i></div>
+
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="pill" data-hero="1">
+          <span class="pill__dot" aria-hidden="true"></span>
+          <span id="estadoHorario">Agencia de viajes · Progreso, Hidalgo</span>
+        </p>
+
+        <h1 class="hero__title" id="hero-titulo">
+          <span class="line"><span class="w" style="--i:0"><span>Viaja</span></span> <span class="w" style="--i:1"><span>y</span></span></span>
+          <span class="line"><span class="w" style="--i:2"><span>transforma</span></span> <span class="w" style="--i:3"><span>un</span></span></span>
+          <span class="line"><span class="w" style="--i:4"><span class="grad" style="--g:0">sueño</span></span> <span class="w" style="--i:5"><span class="grad" style="--g:1">en</span></span> <span class="w" style="--i:6"><span class="grad" style="--g:2">realidad</span></span></span>
+        </h1>
+
+        <p class="hero__lead" data-hero="2">
+          Viajes nacionales e internacionales, y renta de autobuses, minibuses y sprinters. Desde Progreso, Hidalgo, armamos tu ruta y te acompañamos desde los preparativos.
+        </p>
+
+        <div class="hero__cta" data-hero="3">
+          <a class="btn btn--primary btn--lg magnetic" data-wa data-wa-msg="Hola Yeska Tours 👋 ¡Quiero mi próximo viaje! ¿Me comparten destinos y fechas disponibles?" href="#contacto">
+            ¡Quiero mi próximo viaje!
+            <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#destinos">Ver destinos</a>
+        </div>
+
+        <ul class="hero__trust" data-hero="4">
+          <li>
+            <strong><span data-count="98">98</span>%</strong>
+            <span>recomienda a Yeska Tours en Facebook <small>(65 opiniones)</small></span>
+          </li>
+          <li>
+            <strong>L–S</strong>
+            <span>de 9:00 a 20:00 h</span>
+          </li>
+          <li>
+            <strong>MX + 🌎</strong>
+            <span>viajes nacionales e internacionales</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero__stage" aria-hidden="false">
+        <div class="globe">
+          <canvas id="globe" role="img" aria-label="Globo terráqueo animado con rutas de viaje que salen de Progreso, Hidalgo hacia el Caribe, Colombia, Perú y Europa"></canvas>
+        </div>
+
+        <figure class="float float--a">
+          <img src="assets/img/rio-turquesa.jpg" alt="Viajeros con chaleco salvavidas saludando desde una lancha sobre un río de aguas turquesa" width="1400" height="1600">
+          <figcaption>Aguas turquesa</figcaption>
+        </figure>
+        <figure class="float float--b">
+          <img src="assets/img/isla-mujeres.jpg" alt="Letrero colorido de Isla Mujeres frente al mar Caribe" width="1024" height="683">
+          <figcaption>Caribe mexicano</figcaption>
+        </figure>
+        <figure class="float float--c">
+          <img src="assets/img/peru-yeska.jpg" alt="Grupo de viajeros con la bandera de Yeska Tours frente a terrazas de montaña" width="960" height="1280">
+          <figcaption>Con la bandera Yeska</figcaption>
+        </figure>
+
+        <div class="pass" aria-hidden="true">
+          <div class="pass__head"><span>Pase de abordar</span><span>Yeska Tours</span></div>
+          <div class="pass__row">
+            <div><small>De</small><b>Progreso, Hgo.</b></div>
+            <svg class="ico pass__plane"><use href="#i-plane"/></svg>
+            <div><small>A</small><b id="passDestino">Huasteca Potosina</b></div>
+          </div>
+          <div class="pass__foot"><span class="pass__bar"></span><span>Tu asiento te espera</span></div>
+        </div>
+
+        <svg class="badge" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="circ" d="M100 100 m-78 0 a78 78 0 1 1 156 0 a78 78 0 1 1 -156 0"/></defs>
+          <text><textPath href="#circ" startOffset="0">VIAJAR · TRANSFORMAR UN SUEÑO EN REALIDAD ·</textPath></text>
+        </svg>
+        <svg class="badge__star" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 10 60.600 38 90 39 66.500 57 75 86 50 69.500 25 86 33.500 57 10 39 39.400 38Z"/></svg>
+      </div>
+    </div>
+
+    <a class="cue" href="#manifiesto" aria-label="Seguir bajando"><span></span></a>
+  </section>
+
+  <!-- ============ Cinta de destinos ============ -->
+  <section class="marquee" aria-label="Algunos destinos que armamos">
+    <div class="marquee__track">
+      <ul class="marquee__list">
+        <li>Huasteca Potosina</li><li>Caribe Mexicano</li><li>Mazatlán</li><li>Nayarit</li><li>Colombia</li><li>Perú</li><li>Europa clásica</li><li>Cancún</li><li>Xcaret</li><li>Isla Mujeres</li><li>Cascada de Tamul</li><li>Puente de Dios</li><li>Xilitla</li><li>Bacalar</li><li>Chichén Itzá</li><li>Medellín</li><li>Cartagena</li>
+      </ul>
+      <ul class="marquee__list" aria-hidden="true">
+        <li>Huasteca Potosina</li><li>Caribe Mexicano</li><li>Mazatlán</li><li>Nayarit</li><li>Colombia</li><li>Perú</li><li>Europa clásica</li><li>Cancún</li><li>Xcaret</li><li>Isla Mujeres</li><li>Cascada de Tamul</li><li>Puente de Dios</li><li>Xilitla</li><li>Bacalar</li><li>Chichén Itzá</li><li>Medellín</li><li>Cartagena</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Manifiesto ============ -->
+  <section class="manifest" id="manifiesto" aria-labelledby="manifiesto-t">
+    <div class="wrap">
+      <p class="kicker" data-reveal><i class="star" aria-hidden="true"></i> Nuestra forma de viajar</p>
+      <h2 class="manifest__text" id="manifiesto-t" data-words>
+        Viajar no es llegar a un lugar. Es volver con una <em>historia</em> que antes solo era un <em>sueño</em>. Tú eliges el destino; nosotros nos encargamos del <em>camino</em>.
+      </h2>
+
+      <ul class="pillars" data-stagger>
+        <li>
+          <span class="pillar__ico pillar__ico--blue"><svg class="ico" aria-hidden="true"><use href="#i-compass"/></svg></span>
+          <strong>Nacionales e internacionales</strong>
+          <span>De la Huasteca al Caribe, de Colombia a Perú y Europa.</span>
+        </li>
+        <li>
+          <span class="pillar__ico pillar__ico--yellow"><svg class="ico" aria-hidden="true"><use href="#i-bus"/></svg></span>
+          <strong>Transporte cómodo</strong>
+          <span>Autobuses, minibuses y sprinters para que tu grupo llegue junto.</span>
+        </li>
+        <li>
+          <span class="pillar__ico pillar__ico--red"><svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg></span>
+          <strong>Trato cercano y familiar</strong>
+          <span>Información clara desde los preparativos y buen ambiente en cada salida.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Imagen que se abre al hacer scroll ============ -->
+  <section class="expand" id="huasteca" aria-labelledby="huasteca-t">
+    <div class="expand__sticky">
+      <div class="expand__intro" aria-hidden="true">
+        <p class="kicker"><i class="star"></i> Desliza y entra al paisaje</p>
+      </div>
+      <div class="expand__frame" id="expandFrame">
+        <img src="assets/img/tamul-letrero.jpg" alt="Letrero colorido de Cascada Tamul y Río Tampaón, San Luis Potosí, con dos viajeras frente a las letras y cerros verdes al fondo" width="4032" height="3024" loading="lazy" decoding="async">
+        <div class="expand__shade" aria-hidden="true"></div>
+        <div class="expand__content">
+          <p class="kicker kicker--light"><i class="star" aria-hidden="true"></i> Huasteca Potosina · San Luis Potosí</p>
+          <h2 id="huasteca-t">Aguas turquesa, cascadas y selva te están esperando</h2>
+          <p>Sótano de las Golondrinas, Xilitla, Ciudad Valles, Aquismón, Tamul, Tamasopo y Puente de Dios: una ruta que se vive con todos los sentidos.</p>
+          <a class="btn btn--light" data-wa data-wa-msg="Hola Yeska Tours 👋 Quiero conocer la Huasteca Potosina. ¿Qué fechas hay disponibles y qué incluye el viaje?" href="#contacto">
+            Quiero conocer la Huasteca <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Destinos (boletos) ============ -->
+  <section class="tickets" id="destinos" aria-labelledby="destinos-t">
+    <div class="tickets__pin">
+      <div class="wrap tickets__head">
+        <div>
+          <p class="kicker" data-reveal><i class="star" aria-hidden="true"></i> Destinos</p>
+          <h2 id="destinos-t" data-reveal style="--d:1">Elige tu próximo destino. Nosotros armamos el camino.</h2>
+        </div>
+        <p class="tickets__lead" data-reveal style="--d:2">Nacionales e internacionales. Las salidas y los cupos cambian, así que escríbenos y te decimos qué fechas hay disponibles.</p>
+      </div>
+
+      <div class="tickets__viewport">
+        <div class="tickets__track" id="ticketsTrack">
+
+          <!-- 1. Huasteca -->
+          <article class="ticket tilt">
+            <div class="ticket__media">
+              <img src="assets/img/cascada-canon.jpg" alt="Viajera con chaleco salvavidas frente a un cañón de roca blanca con una cascada al fondo y agua turquesa" width="1200" height="1600" loading="lazy" decoding="async">
+              <span class="ticket__badge">Nacional</span>
+              <span class="ticket__route">Progreso → San Luis Potosí</span>
+            </div>
+            <div class="ticket__body">
+              <h3>Huasteca Potosina</h3>
+              <p>Cascadas, aguas turquesa y selva: el plan perfecto si buscas naturaleza y aventura.</p>
+              <ul class="chips">
+                <li>Sótano de las Golondrinas</li><li>Xilitla</li><li>Ciudad Valles</li><li>Aquismón</li><li>Tamul</li><li>Tamasopo</li><li>Puente de Dios</li>
+              </ul>
+              <p class="ticket__inc"><span>Puede incluir</span>
+                <b><svg class="ico" aria-hidden="true"><use href="#i-bus"/></svg>Transporte</b>
+                <b><svg class="ico" aria-hidden="true"><use href="#i-hotel"/></svg>Hospedaje</b>
+                <b><svg class="ico" aria-hidden="true"><use href="#i-food"/></svg>Desayunos</b>
+              </p>
+              <a class="btn btn--primary btn--sm" data-wa data-wa-msg="Hola Yeska Tours 👋 Me interesa el viaje a la Huasteca Potosina. ¿Me comparten fechas disponibles y lo que incluye?" href="#contacto">Quiero este viaje <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <!-- 2. Caribe Mexicano -->
+          <article class="ticket tilt">
+            <div class="ticket__media">
+              <img src="assets/img/isla-mujeres.jpg" alt="Letrero colorido de Isla Mujeres frente al mar Caribe" width="1024" height="683" loading="lazy" decoding="async">
+              <span class="ticket__badge">Nacional</span>
+              <span class="ticket__route">Progreso → Península de Yucatán</span>
+            </div>
+            <div class="ticket__body">
+              <h3>Caribe Mexicano</h3>
+              <p>Playas de ensueño, cenotes y zonas arqueológicas en una sola ruta.</p>
+              <ul class="chips">
+                <li>Cancún</li><li>Xcaret</li><li>Isla Mujeres</li><li>Playa del Carmen</li><li>Tulum</li><li>Chichén Itzá</li><li>Bacalar</li><li>Mérida</li><li>Campeche</li>
+              </ul>
+              <p class="ticket__inc"><span>Puede incluir</span>
+                <b><svg class="ico" aria-hidden="true"><use href="#i-hotel"/></svg>Hospedaje</b>
+                <b><svg class="ico" aria-hidden="true"><use href="#i-food"/></svg>Desayunos</b>
+                <b><svg class="ico" aria-hidden="true"><use href="#i-bus"/></svg>Transporte</b>
+                <b><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Seguro de viajero</b>
+              </p>
+              <a class="btn btn--primary btn--sm" data-wa data-wa-msg="Hola Yeska Tours 👋 Me interesa el viaje al Caribe Mexicano. ¿Me comparten fechas disponibles y lo que incluye?" href="#contacto">Quiero este viaje <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <!-- 3. Mazatlán y Nayarit -->
+          <article class="ticket tilt">
+            <div class="ticket__media ticket__media--art">
+              <svg class="ticket__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración de un atardecer sobre el mar con una palmera">
+                <defs>
+                  <linearGradient id="cieloMaz" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#1D6FD8"/><stop offset=".55" stop-color="#F7C600"/><stop offset="1" stop-color="#E5252A"/>
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="300" fill="url(#cieloMaz)"/>
+                <circle class="art-sun" cx="200" cy="168" r="46" fill="#FFF4C2"/>
+                <path class="art-wave art-wave--1" d="M-40 190q50-14 100 0t100 0 100 0 100 0 100 0V300H-40Z" fill="#1457B0" opacity=".85"/>
+                <path class="art-wave art-wave--2" d="M-40 222q50-14 100 0t100 0 100 0 100 0 100 0V300H-40Z" fill="#0E1630" opacity=".9"/>
+                <path d="M318 300C322 250 316 214 306 176" stroke="#0E1630" stroke-width="7" fill="none" stroke-linecap="round"/>
+                <path d="M306 176q-38-14-62 8 30-6 62-8ZM306 176q32-26 66-10-36-2-66 10ZM306 176q-6-34 24-48-14 30-24 48ZM306 176q-26-30-6-52 2 34 6 52Z" fill="#0E1630"/>
+              </svg>
+              <span class="ticket__badge">Nacional</span>
+              <span class="ticket__route">Progreso → Costa del Pacífico</span>
+            </div>
+            <div class="ticket__body">
+              <h3>Mazatlán y Nayarit</h3>
+              <p>Mar, buen ambiente y hoteles que se disfrutan, como cuentan quienes ya fueron en familia.</p>
+              <ul class="chips"><li>Mazatlán</li><li>Nayarit</li></ul>
+              <p class="ticket__inc"><span>Puede incluir</span>
+                <b><svg class="ico" aria-hidden="true"><use href="#i-bus"/></svg>Transporte cómodo</b>
+                <b><svg class="ico" aria-hidden="true"><use href="#i-hotel"/></svg>Hospedaje</b>
+              </p>
+              <a class="btn btn--primary btn--sm" data-wa data-wa-msg="Hola Yeska Tours 👋 Me interesa el viaje a Mazatlán y Nayarit. ¿Me comparten fechas disponibles y lo que incluye?" href="#contacto">Quiero este viaje <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <!-- 4. Colombia -->
+          <article class="ticket tilt">
+            <div class="ticket__media">
+              <img src="assets/img/colombia-escultura.jpg" alt="Viajero con sombrero colombiano agachado sobre las manos de una escultura monumental con vista a una ciudad entre montañas" width="1200" height="1600" loading="lazy" decoding="async">
+              <span class="ticket__badge ticket__badge--intl">Internacional</span>
+              <span class="ticket__route">Progreso → Colombia</span>
+            </div>
+            <div class="ticket__body">
+              <h3>Colombia</h3>
+              <p>Ciudades vibrantes, montañas y cafetales en un viaje que se queda contigo.</p>
+              <ul class="chips">
+                <li>Bogotá</li><li>Medellín</li><li>Eje Cafetero</li><li>Guatapé</li><li>El Peñol</li><li>Cartagena</li>
+              </ul>
+              <p class="ticket__inc"><span>Puede incluir</span>
+                <b><svg class="ico" aria-hidden="true"><use href="#i-plane"/></svg>Vuelo</b>
+                <b><svg class="ico" aria-hidden="true"><use href="#i-hotel"/></svg>Hotel</b>
+                <b><svg class="ico" aria-hidden="true"><use href="#i-food"/></svg>Alimentos</b>
+              </p>
+              <a class="btn btn--primary btn--sm" data-wa data-wa-msg="Hola Yeska Tours 👋 Me interesa el viaje a Colombia. ¿Me comparten fechas disponibles y lo que incluye?" href="#contacto">Quiero este viaje <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <!-- 5. Perú -->
+          <article class="ticket tilt">
+            <div class="ticket__media">
+              <img src="assets/img/peru-yeska.jpg" alt="Grupo de viajeros sostiene la bandera de Perú, la de Yeska Tours y la de México frente a terrazas de montaña" width="960" height="1280" loading="lazy" decoding="async">
+              <span class="ticket__badge ticket__badge--intl">Internacional</span>
+              <span class="ticket__route">Progreso → Perú</span>
+            </div>
+            <div class="ticket__body">
+              <h3>Perú</h3>
+              <p>Montañas, terrazas ancestrales y cultura viva al otro lado del mapa.</p>
+              <ul class="chips"><li>Historia</li><li>Montañas</li><li>Cultura</li></ul>
+              <p class="ticket__inc"><span>Qué incluye</span>
+                <b><svg class="ico" aria-hidden="true"><use href="#i-compass"/></svg>Te lo detallamos según la salida</b>
+              </p>
+              <a class="btn btn--primary btn--sm" data-wa data-wa-msg="Hola Yeska Tours 👋 Me interesa el viaje a Perú. ¿Me comparten fechas disponibles y lo que incluye?" href="#contacto">Quiero este viaje <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <!-- 6. Europa -->
+          <article class="ticket tilt">
+            <div class="ticket__media ticket__media--art">
+              <svg class="ticket__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración de arcos clásicos y un avión cruzando el cielo">
+                <defs>
+                  <linearGradient id="cieloEu" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#0E1630"/><stop offset="1" stop-color="#1D6FD8"/>
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="300" fill="url(#cieloEu)"/>
+                <circle cx="320" cy="64" r="26" fill="#F7C600"/>
+                <path d="M20 250V172a30 30 0 0 1 60 0v78ZM90 250V150a30 30 0 0 1 60 0v100ZM160 250V128a30 30 0 0 1 60 0v122ZM230 250V150a30 30 0 0 1 60 0v100ZM300 250V172a30 30 0 0 1 60 0v78Z" fill="#F2F0E9"/>
+                <rect y="250" width="400" height="50" fill="#0A0F24"/>
+                <path class="art-trail" d="M20 120C120 36 240 36 340 108" stroke="#fff" stroke-width="2" stroke-dasharray="3 7" fill="none"/>
+                <path class="art-plane" d="M0 0l18 7-18 7 5-7z" fill="#fff" transform="translate(336 104) rotate(38)"/>
+              </svg>
+              <span class="ticket__badge ticket__badge--intl">Internacional</span>
+              <span class="ticket__route">Progreso → Europa</span>
+            </div>
+            <div class="ticket__body">
+              <h3>Europa clásica</h3>
+              <p>17 días y 15 noches para recorrer lo mejor del viejo continente con guía de habla hispana.</p>
+              <ul class="chips"><li>Vuelos</li><li>Traslados</li><li>Visitas</li></ul>
+              <p class="ticket__inc"><span>Puede incluir</span>
+                <b><svg class="ico" aria-hidden="true"><use href="#i-plane"/></svg>Vuelos</b>
+                <b><svg class="ico" aria-hidden="true"><use href="#i-hotel"/></svg>Hospedaje</b>
+                <b><svg class="ico" aria-hidden="true"><use href="#i-food"/></svg>Alimentos indicados</b>
+              </p>
+              <a class="btn btn--primary btn--sm" data-wa data-wa-msg="Hola Yeska Tours 👋 Me interesa el viaje Europa clásica. ¿Me comparten fechas disponibles y lo que incluye?" href="#contacto">Quiero este viaje <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <!-- 7. A tu medida -->
+          <article class="ticket ticket--cta tilt">
+            <div class="ticket__cta">
+              <svg class="ico ico--xl" aria-hidden="true"><use href="#i-route"/></svg>
+              <h3>¿Otro destino en mente?</h3>
+              <p>Cuéntanos tu sueño y armamos la ruta a tu medida: para ti, tu familia o todo tu grupo.</p>
+              <a class="btn btn--light" data-wa data-wa-msg="Hola Yeska Tours 👋 Tengo otro destino en mente. ¿Me ayudan a armar mi viaje?" href="#contacto">Estoy listo, armemos mi viaje <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+      <div class="tickets__meter" aria-hidden="true"><i id="ticketsBar"></i></div>
+    </div>
+  </section>
+
+  <!-- ============ Transporte ============ -->
+  <section class="fleet" id="transporte" aria-labelledby="transporte-t">
+    <div class="fleet__stars" aria-hidden="true"></div>
+    <div class="wrap">
+      <header class="section-head section-head--light">
+        <p class="kicker kicker--light" data-reveal><i class="star" aria-hidden="true"></i> Renta de transporte</p>
+        <h2 id="transporte-t" data-reveal style="--d:1">Autobuses, minibuses y sprinters para que tu grupo llegue junto</h2>
+        <p data-reveal style="--d:2">Excursiones, eventos, escuelas, empresas o familia grande: te ayudamos a mover a tu grupo con comodidad.</p>
+      </header>
+
+      <div class="road" aria-hidden="true">
+        <div class="road__line"></div>
+        <svg class="road__bus" viewBox="0 0 120 56"><rect x="4" y="6" width="104" height="36" rx="10" fill="#fff"/><rect x="12" y="13" width="18" height="13" rx="3" fill="#1D6FD8"/><rect x="34" y="13" width="18" height="13" rx="3" fill="#1D6FD8"/><rect x="56" y="13" width="18" height="13" rx="3" fill="#1D6FD8"/><rect x="78" y="13" width="24" height="13" rx="3" fill="#1D6FD8"/><rect x="4" y="30" width="104" height="5" fill="#F7C600"/><rect x="4" y="35" width="104" height="3" fill="#E5252A"/><circle cx="30" cy="44" r="7" fill="#0E1630"/><circle cx="86" cy="44" r="7" fill="#0E1630"/><circle cx="30" cy="44" r="2.500" fill="#fff"/><circle cx="86" cy="44" r="2.500" fill="#fff"/></svg>
+      </div>
+
+      <div class="fleet__grid">
+        <div data-reveal style="--d:0">
+          <article class="unit tilt">
+            <div class="unit__media">
+              <img src="assets/img/autobus-nocturno.jpg" alt="Autobús turquesa de lujo con las luces encendidas estacionado de noche" width="1600" height="1200" loading="lazy" decoding="async">
+              <span class="unit__tag">Autobús</span>
+            </div>
+            <div class="unit__body">
+              <h3>Autobús</h3>
+              <p>Para grupos grandes y trayectos largos, con la comodidad que se necesita para ir y volver a gusto.</p>
+              <a class="btn btn--light btn--sm" href="#contacto" data-prefill="transporte" data-unit="Autobús">Cotizar autobús <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+        </div>
+
+        <div data-reveal style="--d:1">
+          <article class="unit tilt">
+            <div class="unit__media">
+              <img src="assets/img/minibus.jpg" alt="Minibús blanco estacionado bajo el sol, listo para salir de viaje" width="1599" height="899" loading="lazy" decoding="async">
+              <span class="unit__tag">Minibús</span>
+            </div>
+            <div class="unit__body">
+              <h3>Minibús</h3>
+              <p>Para grupos medianos que quieren viajar cómodos, juntos y sin complicaciones.</p>
+              <a class="btn btn--light btn--sm" href="#contacto" data-prefill="transporte" data-unit="Minibús">Cotizar minibús <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+        </div>
+
+        <div data-reveal style="--d:2">
+          <article class="unit tilt">
+            <div class="unit__media unit__media--art">
+              <svg viewBox="0 0 420 240" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración de una sprinter plateada con franja de colores">
+                <defs>
+                  <linearGradient id="cuerpoVan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#D5DBEA"/></linearGradient>
+                  <linearGradient id="franjaVan" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E5252A"/><stop offset=".35" stop-color="#F7C600"/><stop offset=".68" stop-color="#4BB543"/><stop offset="1" stop-color="#1D6FD8"/></linearGradient>
+                </defs>
+                <rect width="420" height="240" fill="#141C3D"/>
+                <ellipse cx="210" cy="196" rx="170" ry="9" fill="#000" opacity=".35"/>
+                <path d="M34 160V86q0-20 20-22h196q34 2 56 38l44 22q18 8 18 26v10Z" fill="url(#cuerpoVan)" stroke="#0E1630" stroke-width="3" stroke-linejoin="round"/>
+                <rect x="58" y="78" width="52" height="34" rx="6" fill="#26335F"/>
+                <rect x="118" y="78" width="52" height="34" rx="6" fill="#26335F"/>
+                <rect x="178" y="78" width="52" height="34" rx="6" fill="#26335F"/>
+                <path d="M240 78h14q24 4 38 32h-52Z" fill="#26335F"/>
+                <rect x="34" y="126" width="352" height="9" fill="url(#franjaVan)"/>
+                <circle cx="104" cy="162" r="25" fill="#0E1630"/><circle cx="104" cy="162" r="11" fill="#CFD6E8"/>
+                <circle cx="304" cy="162" r="25" fill="#0E1630"/><circle cx="304" cy="162" r="11" fill="#CFD6E8"/>
+                <circle cx="378" cy="140" r="6" fill="#F7C600"/>
+              </svg>
+              <span class="unit__tag">Sprinter</span>
+            </div>
+            <div class="unit__body">
+              <h3>Sprinter</h3>
+              <p>Ágil y cómoda para grupos pequeños, traslados y escapadas con horarios a tu medida.</p>
+              <a class="btn btn--light btn--sm" href="#contacto" data-prefill="transporte" data-unit="Sprinter">Cotizar sprinter <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <figure class="fleet__quote" data-reveal>
+        <blockquote>“Atención inmejorable, transporte súper cómodo y hospedaje increíble.”</blockquote>
+        <figcaption>Dio N. · reseña de un viajero en Facebook</figcaption>
+      </figure>
+
+      <p class="fleet__cta" data-reveal>
+        <a class="btn btn--light btn--lg" href="#contacto" data-prefill="transporte">Necesito transporte para mi grupo <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ Galería ============ -->
+  <section class="gallery" id="experiencias" aria-labelledby="exp-t">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="kicker" data-reveal><i class="star" aria-hidden="true"></i> Experiencias reales</p>
+        <h2 id="exp-t" data-reveal style="--d:1">Así se viven los viajes con Yeska</h2>
+        <p data-reveal style="--d:2">Fotos reales de nuestros viajeros. Toca cualquiera para verla en grande.</p>
+      </header>
+    </div>
+
+    <div class="gallery__cols wrap">
+      <div class="gallery__col" data-speed="26">
+        <button class="shot" type="button" style="--ar:7/8"><img src="assets/img/rio-turquesa.jpg" alt="Grupo de viajeros con chaleco salvavidas saludando desde una lancha sobre un río de aguas turquesa rodeado de árboles" width="1400" height="1600" loading="lazy" decoding="async"></button>
+        <button class="shot" type="button" style="--ar:4/3"><img src="assets/img/bahia-mirador.jpg" alt="Viajero con sombrero haciendo la señal de paz en un mirador con vista a una bahía y a la ciudad entre montañas" width="1600" height="1204" loading="lazy" decoding="async"></button>
+        <button class="shot" type="button" style="--ar:3/4"><img src="assets/img/tubing-aventura.jpg" alt="Grupo de viajeros con casco y chaleco salvavidas cargando cámaras de llanta para una aventura de tubing" width="1200" height="1600" loading="lazy" decoding="async"></button>
+      </div>
+      <div class="gallery__col" data-speed="-22">
+        <button class="shot" type="button" style="--ar:7/8"><img src="assets/img/lanchas-grupo.jpg" alt="Lanchas de colores en un río turquesa con viajeros con chaleco salvavidas posando para la foto" width="1120" height="1280" loading="lazy" decoding="async"></button>
+        <button class="shot" type="button" style="--ar:4/3"><img src="assets/img/aifa-grupo.jpg" alt="Grupo de viajeros con maletas frente al arco floral de bienvenida del aeropuerto AIFA, Ciudad de México" width="1280" height="960" loading="lazy" decoding="async"></button>
+        <button class="shot" type="button" style="--ar:3/4"><img src="assets/img/pozas-turquesa.jpg" alt="Viajera con chaleco salvavidas posando en un mirador de madera sobre pozas de agua turquesa y selva" width="1200" height="1600" loading="lazy" decoding="async"></button>
+      </div>
+      <div class="gallery__col" data-speed="30">
+        <button class="shot" type="button" style="--ar:3/4"><img src="assets/img/cascada-canon.jpg" alt="Viajera con chaleco salvavidas frente a un cañón de roca blanca con una cascada al fondo" width="1200" height="1600" loading="lazy" decoding="async"></button>
+        <button class="shot" type="button" style="--ar:4/3"><img src="assets/img/tamul-letrero.jpg" alt="Letrero de Cascada Tamul y Río Tampaón con dos viajeras y cerros verdes al fondo" width="4032" height="3024" loading="lazy" decoding="async"></button>
+        <button class="shot" type="button" style="--ar:3/4"><img src="assets/img/peru-yeska.jpg" alt="Grupo de viajeros con la bandera de Perú, la de Yeska Tours y la de México frente a terrazas de montaña" width="960" height="1280" loading="lazy" decoding="async"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Por qué Yeska (bento) ============ -->
+  <section class="why" id="porque" aria-labelledby="porque-t">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="kicker" data-reveal><i class="star" aria-hidden="true"></i> Por qué viajar con Yeska</p>
+        <h2 id="porque-t" data-reveal style="--d:1">Lo que más repiten quienes ya viajaron con nosotros</h2>
+      </header>
+
+      <div class="bento" data-stagger>
+        <article class="tile tile--stat">
+          <div class="ring" data-ring="98">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="ring__bg" cx="60" cy="60" r="52"/>
+              <circle class="ring__fg" cx="60" cy="60" r="52" pathLength="100"/>
+            </svg>
+            <strong><span data-count="98">98</span>%</strong>
+          </div>
+          <h3>Nos recomiendan</h3>
+          <p>de los viajeros recomienda a Yeska Tours en Facebook, con <b>65 opiniones</b>.</p>
+        </article>
+
+        <article class="tile tile--red">
+          <span class="tile__ico"><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg></span>
+          <h3>Ambiente familiar</h3>
+          <p>Viajas en compañía de personas gratas y con un trato cercano de principio a fin.</p>
+        </article>
+
+        <article class="tile tile--blue">
+          <span class="tile__ico"><svg class="ico" aria-hidden="true"><use href="#i-hotel"/></svg></span>
+          <h3>Transporte y hospedaje cómodos</h3>
+          <p>Llegas descansado y regresas con ganas de repetir.</p>
+        </article>
+
+        <article class="tile tile--yellow">
+          <span class="tile__ico"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg></span>
+          <h3>Información clara</h3>
+          <p>Desde los preparativos sabes qué sigue, qué incluye tu viaje y qué necesitas llevar.</p>
+        </article>
+
+        <article class="tile tile--green">
+          <span class="tile__ico"><svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg></span>
+          <h3>Atención personalizada</h3>
+          <p>Si surge algo en el camino, buscamos la manera de resolverlo contigo.</p>
+        </article>
+
+        <article class="tile tile--ink">
+          <span class="tile__ico"><svg class="ico" aria-hidden="true"><use href="#i-route"/></svg></span>
+          <h3>Itinerarios amplios</h3>
+          <p>Recorridos completos para que le saques el máximo a cada destino.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Proceso ============ -->
+  <section class="steps" id="proceso" aria-labelledby="proceso-t">
+    <div class="wrap steps__grid">
+      <header class="section-head steps__head">
+        <p class="kicker" data-reveal><i class="star" aria-hidden="true"></i> Tu viaje, paso a paso</p>
+        <h2 id="proceso-t" data-reveal style="--d:1">De tu sueño al asiento del autobús en 4 pasos</h2>
+        <p data-reveal style="--d:2">Sin enredos y sin letras chiquitas: así es como lo hacemos juntos.</p>
+        <a class="btn btn--primary btn--lg" data-wa data-wa-msg="Hola Yeska Tours 👋 Estoy listo para empezar a planear mi viaje." href="#contacto" data-reveal style="--d:3">Estoy listo, empecemos <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </header>
+
+      <ol class="timeline" id="timeline">
+        <li class="step" data-step>
+          <span class="step__n">01</span>
+          <div><h3>Cuéntanos tu sueño</h3><p>Escríbenos por WhatsApp o llámanos: dinos a dónde quieres ir, con quién y más o menos cuándo.</p></div>
+        </li>
+        <li class="step" data-step>
+          <span class="step__n">02</span>
+          <div><h3>Armamos tu ruta</h3><p>Te compartimos opciones de destino, fechas disponibles y lo que incluye cada paquete.</p></div>
+        </li>
+        <li class="step" data-step>
+          <span class="step__n">03</span>
+          <div><h3>Reserva con calma</h3><p>Resolvemos tus dudas con información clara y precisa, desde los preparativos.</p></div>
+        </li>
+        <li class="step" data-step>
+          <span class="step__n">04</span>
+          <div><h3>Viaja y disfruta</h3><p>Tú solo piensas en disfrutar: nosotros cuidamos que en cada lugar tengas la mejor atención.</p></div>
+        </li>
+        <li class="timeline__rail" aria-hidden="true"><i id="timelineFill"></i><b id="timelinePlane"></b></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ Opiniones ============ -->
+  <section class="reviews" id="opiniones" aria-labelledby="opiniones-t">
+    <div class="wrap reviews__head">
+      <div>
+        <p class="kicker kicker--light" data-reveal><i class="star" aria-hidden="true"></i> Opiniones reales</p>
+        <h2 id="opiniones-t" data-reveal style="--d:1">Lo dicen quienes ya viajaron con nosotros</h2>
+      </div>
+      <div class="reviews__score" data-reveal style="--d:2">
+        <strong><span data-count="98">98</span>%</strong>
+        <span>recomienda a Yeska Tours<br><small>65 opiniones en Facebook</small></span>
+      </div>
+    </div>
+
+    <div class="reviews__rows">
+      <div class="reviews__row">
+        <div class="reviews__track">
+          <figure class="rev"><svg class="ico rev__ico" aria-hidden="true"><use href="#i-thumb"/></svg><blockquote>Súper recomendable, los hoteles que nos hospeda increíbles, todo muy bien organizado y el ambiente súper familiar. Sin duda la mejor opción.</blockquote><figcaption>Rubén R. <span>Recomienda en Facebook</span></figcaption></figure>
+          <figure class="rev"><svg class="ico rev__ico" aria-hidden="true"><use href="#i-thumb"/></svg><blockquote>Una experiencia muy padre, con un itinerario amplio y un excelente ambiente.</blockquote><figcaption>Lauu F. <span>Recomienda en Facebook</span></figcaption></figure>
+          <figure class="rev"><svg class="ico rev__ico" aria-hidden="true"><use href="#i-thumb"/></svg><blockquote>Atención inmejorable, transporte súper cómodo y hospedaje increíble. ¡Recomendadísimos!</blockquote><figcaption>Dio N. <span>Recomienda en Facebook</span></figcaption></figure>
+          <figure class="rev"><svg class="ico rev__ico" aria-hidden="true"><use href="#i-thumb"/></svg><blockquote>Muy bonita experiencia, buena organización y muy bonitos lugares turísticos. Súper recomendable.</blockquote><figcaption>April M. <span>Recomienda en Facebook</span></figcaption></figure>
+        </div>
+      </div>
+      <div class="reviews__row reviews__row--rev">
+        <div class="reviews__track">
+          <figure class="rev"><svg class="ico rev__ico" aria-hidden="true"><use href="#i-thumb"/></svg><blockquote>Excelente servicio, muy buena atención y trato amable.</blockquote><figcaption>Rosy O. <span>Recomienda en Facebook</span></figcaption></figure>
+          <figure class="rev"><svg class="ico rev__ico" aria-hidden="true"><use href="#i-thumb"/></svg><blockquote>Ampliamente recomendado y muy agradable ambiente.</blockquote><figcaption>Aracely M. <span>Recomienda en Facebook</span></figcaption></figure>
+          <figure class="rev"><svg class="ico rev__ico" aria-hidden="true"><use href="#i-thumb"/></svg><blockquote>Gran servicio, recomiendo ampliamente.</blockquote><figcaption>América M. <span>Recomienda en Facebook</span></figcaption></figure>
+          <figure class="rev"><svg class="ico rev__ico" aria-hidden="true"><use href="#i-thumb"/></svg><blockquote>Súper recomendable, la mejor atención.</blockquote><figcaption>Rey E. <span>Recomienda en Facebook</span></figcaption></figure>
+        </div>
+      </div>
+    </div>
+
+    <p class="reviews__cta wrap" data-reveal>
+      <a class="btn btn--light btn--lg" data-wa data-wa-msg="Hola Yeska Tours 👋 Quiero vivir un viaje como los que cuentan sus viajeros. ¿Qué destinos tienen?" href="#contacto">Quiero vivir mi viaje así <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </p>
+  </section>
+
+  <!-- ============ Zona de salida ============ -->
+  <section class="zone" id="zona" aria-labelledby="zona-t">
+    <div class="wrap zone__box">
+      <div class="zone__copy">
+        <p class="kicker" data-reveal><i class="star" aria-hidden="true"></i> Cerca de ti</p>
+        <h2 id="zona-t" data-reveal style="--d:1">Salimos desde tu región</h2>
+        <p data-reveal style="--d:2">En nuestros viajes a la Huasteca Potosina, la ruta de salida pasa por estas localidades. Si vives cerca, ¡nos queda de camino!</p>
+      </div>
+      <ul class="route" data-stagger>
+        <li>Pachuca</li><li>Actopan</li><li>Tepa</li><li class="is-home">Progreso</li><li>Mixquiahuala</li><li>Tinaco</li><li>Tlahuelilpan</li><li>Tula</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Preguntas frecuentes ============ -->
+  <section class="faq" id="faq" aria-labelledby="faq-t">
+    <div class="wrap faq__grid">
+      <header class="section-head">
+        <p class="kicker" data-reveal><i class="star" aria-hidden="true"></i> Preguntas frecuentes</p>
+        <h2 id="faq-t" data-reveal style="--d:1">Resolvemos tus dudas antes de que te pongas el cinturón</h2>
+      </header>
+      <div class="faq__list" data-stagger>
+        <div class="qa">
+          <h3><button type="button" class="qa__q" aria-expanded="false" aria-controls="qa1">¿Qué tipo de viajes organizan?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+          <div class="qa__a" id="qa1" role="region"><div><p>Organizamos viajes nacionales e internacionales. Entre nuestros destinos: Huasteca Potosina, Caribe Mexicano, Mazatlán y Nayarit, Colombia, Perú y Europa clásica. ¿Otro lugar en mente? Lo armamos contigo.</p></div></div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" class="qa__q" aria-expanded="false" aria-controls="qa2">¿También rentan transporte sin paquete de viaje?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+          <div class="qa__a" id="qa2" role="region"><div><p>Sí. Rentamos autobuses, minibuses y sprinters. Cuéntanos tu ruta, la fecha y cuántas personas viajan, y te cotizamos por WhatsApp.</p></div></div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" class="qa__q" aria-expanded="false" aria-controls="qa3">¿Qué incluye un paquete de viaje?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+          <div class="qa__a" id="qa3" role="region"><div><p>Depende del destino. Según el viaje puede incluir transporte, hospedaje, desayunos o alimentos, vuelos, traslados, seguro de viajero y guía. Antes de reservar te lo detallamos con claridad.</p></div></div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" class="qa__q" aria-expanded="false" aria-controls="qa4">¿Cómo sé qué fechas hay disponibles?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+          <div class="qa__a" id="qa4" role="region"><div><p>Las salidas y los cupos cambian, y algunos viajes se llenan rápido. Escríbenos por WhatsApp y te decimos qué fechas están disponibles para el destino que te interesa.</p></div></div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" class="qa__q" aria-expanded="false" aria-controls="qa5">¿Cuál es su horario de atención?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+          <div class="qa__a" id="qa5" role="region"><div><p>Atendemos de lunes a sábado, de 9:00 a 20:00 horas. Puedes dejarnos tu mensaje por WhatsApp en cualquier momento.</p></div></div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" class="qa__q" aria-expanded="false" aria-controls="qa6">¿Dónde están ubicados?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+          <div class="qa__a" id="qa6" role="region"><div><p>Somos de Progreso, Hidalgo. Escríbenos o llámanos y coordinamos todo contigo para tu viaje o tu renta de transporte.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Contacto ============ -->
+  <section class="contact" id="contacto" aria-labelledby="contacto-t">
+    <div class="contact__bg" aria-hidden="true"></div>
+    <div class="wrap contact__grid">
+      <div class="contact__info">
+        <p class="kicker kicker--light" data-reveal><i class="star" aria-hidden="true"></i> Contacto</p>
+        <h2 id="contacto-t" data-reveal style="--d:1">Tu próximo viaje empieza con un mensaje</h2>
+        <p class="contact__lead" data-reveal style="--d:2">Cuéntanos a dónde quieres ir y te respondemos por WhatsApp con opciones, fechas y lo que incluye. Sin compromiso.</p>
+
+        <ul class="contact__list" data-stagger>
+          <li>
+            <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
+            <div><small>Llámanos</small>
+              <a href="tel:+527721336096">772 133 6096</a> · <a href="tel:+527714359019">771 435 9019</a>
+            </div>
+          </li>
+          <li>
+            <svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>
+            <div><small>Horario de atención</small>
+              Lunes a sábado, 9:00 a 20:00 h
+              <em id="estadoHorario2" class="status"></em>
+            </div>
+          </li>
+          <li>
+            <svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>
+            <div><small>Ubicación</small>Progreso, Hidalgo</div>
+          </li>
+          <li>
+            <svg class="ico ico--fill" aria-hidden="true"><use href="#i-facebook"/></svg>
+            <div><small>Facebook</small>
+              <a href="https://www.facebook.com/search/top?q=Yeska%20Tours%20De%20Progreso%20Hidalgo" target="_blank" rel="noopener">Yeska Tours De Progreso Hidalgo</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contact__card" data-reveal style="--d:2">
+        <form id="formContacto" class="form" novalidate>
+          <div class="seg" role="radiogroup" aria-label="¿Qué necesitas?">
+            <input type="radio" name="tipo" id="tipoViaje" value="viaje" checked>
+            <label for="tipoViaje">Quiero viajar</label>
+            <input type="radio" name="tipo" id="tipoTransporte" value="transporte">
+            <label for="tipoTransporte">Necesito transporte</label>
+            <span class="seg__thumb" aria-hidden="true"></span>
+          </div>
+
+          <div class="field">
+            <label for="fNombre">Tu nombre</label>
+            <input id="fNombre" name="nombre" type="text" autocomplete="name" placeholder="¿Cómo te llamas?" required>
+            <p class="field__err" id="errNombre" role="alert"></p>
+          </div>
+
+          <div class="panel" data-panel="viaje">
+            <div class="field">
+              <label for="fDestino">Destino que te interesa</label>
+              <select id="fDestino" name="destino">
+                <option>Huasteca Potosina</option>
+                <option>Caribe Mexicano</option>
+                <option>Mazatlán y Nayarit</option>
+                <option>Colombia</option>
+                <option>Perú</option>
+                <option>Europa clásica</option>
+                <option>Otro destino / aún no lo sé</option>
+              </select>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="fPersonas">¿Cuántas personas?</label>
+                <input id="fPersonas" name="personas" type="number" inputmode="numeric" min="1" max="200" placeholder="Ej. 4">
+              </div>
+              <div class="field">
+                <label for="fFecha">¿Cuándo te gustaría ir?</label>
+                <input id="fFecha" name="fecha" type="text" placeholder="Ej. diciembre">
+              </div>
+            </div>
+          </div>
+
+          <div class="panel" data-panel="transporte" hidden>
+            <div class="field">
+              <label for="fUnidad">Tipo de unidad</label>
+              <select id="fUnidad" name="unidad">
+                <option>Autobús</option>
+                <option>Minibús</option>
+                <option>Sprinter</option>
+                <option>No sé cuál me conviene</option>
+              </select>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="fOrigen">Origen</label>
+                <input id="fOrigen" name="origen" type="text" placeholder="Ej. Progreso, Hgo.">
+              </div>
+              <div class="field">
+                <label for="fDestinoT">Destino</label>
+                <input id="fDestinoT" name="destinoT" type="text" placeholder="¿A dónde van?">
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="fFechaT">Fecha del servicio</label>
+                <input id="fFechaT" name="fechaT" type="text" placeholder="Ej. 15 de enero">
+              </div>
+              <div class="field">
+                <label for="fPasajeros">Pasajeros</label>
+                <input id="fPasajeros" name="pasajeros" type="number" inputmode="numeric" min="1" max="200" placeholder="Ej. 30">
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="fMensaje">¿Algo más que quieras contarnos? <span>(opcional)</span></label>
+            <textarea id="fMensaje" name="mensaje" rows="3" placeholder="Cuéntanos tu idea, ocasión o presupuesto aproximado"></textarea>
+          </div>
+
+          <button class="btn btn--primary btn--lg btn--block" type="submit" id="btnEnviar">
+            <svg class="ico ico--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Mándame mi cotización por WhatsApp
+          </button>
+          <p class="form__note" id="formNota">Se abrirá WhatsApp con tu mensaje listo para enviar. Sin compromiso.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ Pie de página ============ -->
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <a class="brand brand--footer" href="#inicio" aria-label="Yeska Tours, ir al inicio">
+        <img src="assets/logo-yeska-tours.jpeg" alt="Yeska Tours" width="539" height="254" loading="lazy">
+      </a>
+      <p>Viajar… transformar un sueño en realidad. Agencia de viajes y renta de transporte en Progreso, Hidalgo.</p>
+    </div>
+    <nav class="footer__nav" aria-label="Pie de página">
+      <strong>Explora</strong>
+      <a href="#destinos">Destinos</a>
+      <a href="#transporte">Renta de transporte</a>
+      <a href="#experiencias">Experiencias</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#faq">Preguntas frecuentes</a>
+    </nav>
+    <div class="footer__contact">
+      <strong>Contacto</strong>
+      <a href="tel:+527721336096">772 133 6096</a>
+      <a href="tel:+527714359019">771 435 9019</a>
+      <span>Lunes a sábado · 9:00 a 20:00 h</span>
+      <span>Progreso, Hidalgo</span>
+    </div>
+  </div>
+  <p class="footer__legal wrap">© 2026 Yeska Tours. Todos los derechos reservados.</p>
+</footer>
+
+<!-- ============ Botón flotante de WhatsApp ============ -->
+<a class="wa-float" id="waFloat" data-wa data-wa-msg="Hola Yeska Tours 👋 Quisiera más información de sus viajes." href="#contacto" aria-label="Escríbenos por WhatsApp">
+  <span class="wa-float__tip">¿Hablamos? Escríbenos</span>
+  <span class="wa-float__btn"><svg class="ico ico--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
+</a>
+
+<!-- ============ Visor de fotos ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galería de fotos" hidden>
+  <button class="lightbox__close" id="lbClose" type="button" aria-label="Cerrar"><svg class="ico" aria-hidden="true"><use href="#i-close"/></svg></button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" type="button" aria-label="Foto anterior"><svg class="ico" aria-hidden="true"><use href="#i-chev"/></svg></button>
+  <figure class="lightbox__fig">
+    <img id="lbImg" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" id="lbNext" type="button" aria-label="Foto siguiente"><svg class="ico" aria-hidden="true"><use href="#i-chev"/></svg></button>
+</div>
+
+<div class="spotlight" id="spotlight" aria-hidden="true"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
