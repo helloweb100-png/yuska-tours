@@ -449,6 +449,29 @@ body.is-locked { overflow: hidden; }
   .ticket--cta { width: 460px; }
 }
 
+/* ---------- 8b. PRÓXIMAS SALIDAS (carteles de excursiones) ---------- */
+.salidas { padding: 0 0 clamp(70px, 9vw, 110px); background: var(--bg-2); overflow-x: clip; }
+.salidas__grid { display: grid; grid-template-columns: 1fr; gap: 18px; margin-top: 34px; }
+.salida {
+  display: flex; flex-direction: column; overflow: hidden; background: #fff; border-radius: 26px;
+  box-shadow: 0 34px 60px -34px rgba(14, 22, 48, .5), 0 0 0 1px var(--line);
+}
+/* El cartel se ve completo (nunca recortado): cuadro fijo + contain */
+.salida .shot { flex: none; aspect-ratio: 1 / 1; border-radius: 0; box-shadow: none; }
+.salida .shot img { object-fit: contain; }
+.salida__body { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; flex: 1; padding: 20px 20px 22px; border-top: 2px dashed var(--line); }
+.salida__body p:not(.ticket__inc) { color: var(--muted); font-size: .94rem; }
+.salida__body .salida__fecha { color: var(--ink); font-weight: 700; }
+.salida__fecha span {
+  display: inline-block; margin-right: .35em; padding: .25em .8em; border-radius: 99px;
+  font-size: .68rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; background: var(--yellow); color: var(--ink);
+}
+.salida__body p.salida__desde { font-size: .84rem; }
+.salida__desde b { color: var(--ink-2); font-weight: 700; }
+.salida__body .btn { margin-top: auto; }
+@media (min-width: 640px) { .salidas__grid { grid-template-columns: repeat(2, 1fr); gap: 20px; } }
+@media (min-width: 1100px) { .salidas__grid { grid-template-columns: repeat(4, 1fr); } }
+
 /* ---------- 9. TRANSPORTE ---------- */
 .fleet {
   position: relative; z-index: 2; overflow-x: clip; color: #EAF0FF; border-radius: 40px 40px 0 0;
